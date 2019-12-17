@@ -8,7 +8,7 @@ from datetime import date
 from discord import user
 
 bot = commands.Bot(command_prefix = '=')
-main_channel_id = 649155422049140738
+main_channel_id = id
 main_channel_name = 'ooc-talk'
 user = discord.Client()
 
