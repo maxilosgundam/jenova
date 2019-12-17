@@ -1,0 +1,13 @@
+{"welcome_messages":["has arrived from the Anima International Airport!", "has entered Eden City on foot!"],
+"kick_messages":["has departed from Revenant."],
+"ban_messages":["has been eletrocuted to death by Daedalus, Darth Sidious style."],
+"revenant_fact":["Edmund Hill is the first Anima ATLAS Prime Minister to be an active widower.",
+  "Shinra roleplayers often have OCs with the strongest Origin Gear in terms of destructive prowess.",
+"Albern Amund is the only Red Syndicate Godfather to have not descended from the original Godfather family heritage."],
+"revenant_months":["Janus","Pater","Qirinus","Patulcius","Clusivi","Geminu","Libo","Juno","Consivius","Coenn","Corvus","Valheim"],
+"revenant_weekdays":["Lumus", "Rumille", "Ruxen", "Thoran", "Azora", "Fridus", "Tebra"],
+"askjenova":["It is decidedly so, ","100% probability, ","Yes, it is most certain, ","Odds are favorable. You may 'rely' on your chances, ",
+"According to my processed results, yes, ","It is possible, ","Simulation forecasts are good, ","Yes, ","Conclusive observational data points to yes, ","My auditory inputs cannot pick up your reply. I suggest you try again,",
+"Please try again, ","Current conditions are not favorable enough to tell you immediately, ","I do not have enough data to define a decisive conclusion, ","Consolidate your incomplete data and ask again, ",
+"0.0000000000000000001% probability, ","Negative, ","Unfortunately, my data states that it is impossible, ","Low probability, ","Very questionable, "],
+"allowed_channels":[649155422049140738,655947091318800385]}
