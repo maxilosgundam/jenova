@@ -3,7 +3,7 @@ from discord.ext import commands
 import json
 
 
-main_channel_id = 649155422049140738
+
 
 async def is_guild_owner(ctx):
     return ctx.author.id == ctx.guild.owner.id
@@ -12,6 +12,7 @@ class Settings(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
+    
     @commands.command()
     @commands.check(is_guild_owner)
     async def changeprefix(self, ctx,*, newprefix):

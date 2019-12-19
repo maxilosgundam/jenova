@@ -50,7 +50,7 @@
         "Albern Amund, the Red Syndicate's current Godfather, is said to have expressed an intimate desire in other people's toes.",
         "The Red Syndicate's roots are older than ATLAS itself, establishment-wise.",
         "Almost half of the Revenant characters are either Slav or albino, or even both!",
-        "Syrille Eveann once posed as a big time celebrity using an alias named 'Elise Lutia' for a mission. Unfortunately, her alias' reputation has not ceased to attract many desperate fans who wished for her return from assumed retirement.",
+        "Syrille Eveann once posed as a big time celebrity using an alias named 'Elise Lutia' for an important mission. Unfortunately, even her alias' assumed retirement did not stop desperate fans from wishful thinking.",
         "Despite Operatives Agent Crimson Morial's cold personality, she is secretly a masochist.",
         "Daedalus favorite phrase is 'All die'.",
         "Revenant was founded by Daedalus and his original group of RP friends in 2016 on a Zetaboard forum site."
@@ -99,8 +99,7 @@
         "Low probability, ",
         "Very questionable, "
     ],
-    "allowed_channels": [
-        649155422049140738,
-        655947091318800385
-    ]
+    "main_channel_id":649155422049140738,
+    "bot_channel_id":655947091318800385,
+    "website":"https://sites.google.com/view/revenantrp/home"
 }

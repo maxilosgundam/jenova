@@ -8,20 +8,26 @@ from datetime import date
 from discord import user
 import asyncio
 import os
+from itertools import cycle
 
 
 async def get_commandprefix(ctx, message):
     with open('data/data.json') as d:
         data = json.load(d)
-    #prefix = data['prefix']
-    print("Prefix is " + prefix)
+    prefix = data['prefix']
+    #print("Prefix is " + prefix)
     return str(prefix)
+
+async def get_mainchannel(ctx):
+    with open('data/data.json') as d:
+        data = json.load(d)
+    channel_id = data['main_channel_id']
+    print("Main channel ID is " + channel_id)
+    return channel_id
 
 
 bot = commands.Bot(command_prefix=get_commandprefix)
-main_channel_id = 649155422049140738
-main_channel_name = 'ooc-talk'
-user = discord.Client()
+main_channel_id = get_mainchannel
 TOKEN = open("TOKEN.txt","r").read()
 
 @bot.event
@@ -32,27 +38,16 @@ async def on_ready():
     print('-----READY----- \n')
 
 
-
-
-
-
-
-
-
-
-
-
-
 async def change_status():
     await bot.wait_until_ready()
     with open('data/data.json') as d:
         data = json.load(d)
-    statuses = data['jenova_status']
+    statuses = cycle(data['jenova_status'])
 
     while not bot.is_closed():
-        status = random.choice(statuses)
+        status = next(statuses)
         await bot.change_presence(activity=discord.Game(status))
-        await asyncio.sleep(10)
+        await asyncio.sleep(60)
 
 for cog in os.listdir(".\\cogs"):
     if cog.endswith(".py"):

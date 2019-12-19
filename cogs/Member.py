@@ -3,7 +3,7 @@ from discord.ext import commands
 import json
 
 
-main_channel_id = 649155422049140738
+
 
 
 
@@ -11,6 +11,7 @@ class Member(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
+    
     @commands.command()
     async def userinfo(self,ctx, member: discord.Member = None):
         member = ctx.author if not member else member
