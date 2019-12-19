@@ -6,11 +6,12 @@ from discord.ext import commands
 from datetime import datetime
 from datetime import date
 
-main_channel_id = 649155422049140738
+
 
 class Revenant(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+
 
     @commands.command()
     async def revdate(self,ctx):
@@ -36,8 +37,15 @@ class Revenant(commands.Cog):
         with open('data/data.json') as d:
             data = json.load(d)
         rfact = data['revenant_fact']
-        channel_perms = data['allowed_channels']
         await ctx.send(random.choice(rfact))
+
+    @commands.command()
+    async def revsite(self, ctx):
+        with open('data/data.json') as d:
+            data = json.load(d)
+        site = data['website']
+        embed = discord.Embed(url="https://sites.google.com/view/revenantrp/home")
+        await ctx.send(site)
 
 
 
